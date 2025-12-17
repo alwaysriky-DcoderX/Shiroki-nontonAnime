@@ -1,8 +1,8 @@
 @echo off
-title Renzoku Anime Streaming
+title Shiroki Anime Streaming
 echo.
 echo ========================================
-echo    🎬 RENZOKU ANIME STREAMING 🎬
+echo    🎬 SHIROKI ANIME STREAMING 🎬
 echo ========================================
 echo.
 echo Starting Renzoku server...
@@ -35,7 +35,7 @@ echo ✅ Server berjalan di: http://localhost:%PORT%
 echo 🚀 Menjalankan server...
 echo.
 echo ========================================
-echo   Server Renzoku berhasil dijalankan!
+echo   Server Shiroki berhasil dijalankan!
 echo ========================================
 echo.
 echo 📱 Akses website di: http://localhost:%PORT%
