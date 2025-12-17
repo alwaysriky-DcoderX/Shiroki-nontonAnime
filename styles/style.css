@@ -1,3 +1,63 @@
+/* LOGIN MODAL */
+.login-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.login-box {
+    background: #0f172a;
+    color: white;
+    padding: 25px;
+    border-radius: 16px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 0 40px rgba(0,140,255,.3);
+    position: relative;
+}
+
+.login-box h2 {
+    margin-bottom: 5px;
+}
+
+.login-box p {
+    font-size: 0.85rem;
+    opacity: .8;
+    margin-bottom: 15px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg,#3b82f6,#06b6d4);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
 /* Reset & Base Styles */
 * {
     margin: 0;
