@@ -1,18 +1,15 @@
-// JIKA SUDAH LOGIN, LEWATI HALAMAN LOGIN
-if (window.location.pathname.includes("login.html")) {
-    if (localStorage.getItem("shiroki_user")) {
-        window.location.href = "index.html";
-    }
+const isLoginPage = window.location.pathname.includes("login.html");
+
+// JIKA SUDAH LOGIN, JANGAN KE LOGIN LAGI
+if (isLoginPage && localStorage.getItem("shiroki_user")) {
+    window.location.href = "/";
 }
 
-// PROTEKSI WEBSITE
-if (!window.location.pathname.includes("login.html")) {
-    if (!localStorage.getItem("shiroki_user")) {
-        window.location.href = "login.html";
-    }
+// JIKA BELUM LOGIN, PAKSA KE LOGIN
+if (!isLoginPage && !localStorage.getItem("shiroki_user")) {
+    window.location.href = "/login.html";
 }
 
-// LOGIN ACTION
 document.addEventListener("DOMContentLoaded", () => {
     const loginBtn = document.getElementById("login-btn");
     if (!loginBtn) return;
@@ -27,6 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         localStorage.setItem("shiroki_user", user);
-        window.location.href = "index.html";
+        window.location.href = "/";
     });
 });
